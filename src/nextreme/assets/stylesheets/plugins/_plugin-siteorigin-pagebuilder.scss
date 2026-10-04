@@ -1,0 +1,29 @@
+// Themes
+$categories-contrast: 5%;
+@mixin theme-categories-color($color-bg, $color) {
+  .categories-item-content {
+    background: $color-bg;
+  }
+  .categories-item-title h4 {
+    color: rgba($color, 0.75);
+  }
+  .categories-item-image svg .st0 {
+    fill: $color;
+  }
+}
+
+/**/
+.so-widget-sow-image {
+}
+.sow-image-container {
+  //  padding-bottom: 20px;
+  img {
+    /* @include border-radius($border-radius); */
+  }
+}
+
+.siteorigin-widget-tinymce a {
+  text-decoration: underline;
+  color: currentColor;
+}
+// .sow-image-container img { @include border-radius(10px); }

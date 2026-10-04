@@ -1,0 +1,16 @@
+//npmCloudsmithIo/fortawesome/webawesomePro/:AuthToken: ivTVoCIVT5rGgL3b3dbHO
+
+'@awesomeMe:registry': https://npm.cloudsmith.io/fortawesome/webawesome-pro
+
+ignoredBuiltDependencies:
+  - node-sass
+
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - esbuild
+  - gifsicle
+  - jpegtran-bin
+  - mozjpeg
+  - node-sass
+  - optipng-bin
+  - pngquant-bin

@@ -1,0 +1,228 @@
+html {
+  font-size: 62.5%;
+}
+#body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0;
+  background: #787878;
+  color: #060606;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @include prefix(text-size-adjust, "100%");
+}
+#backgroundTable {
+  color: #242424;
+  background: #787878;
+}
+.btn {
+  background-color: #858585;
+  @include border-radius(4px);
+  a {
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0 7px;
+    text-decoration: none;
+  }
+}
+.btn-blue {
+  background-color: #51cbfd;
+}
+.btn-red {
+  background: #de0712;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+b,
+strong {
+  font-weight: bold;
+}
+small,
+.small {
+  font-size: 13px;
+  line-height: 1.3;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: Impact, Charcoal, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 1;
+}
+h1 {
+  font-size: 54px;
+  margin: 0 0 10px;
+}
+h2 {
+  font-size: 50px;
+}
+h3 {
+  font-size: 34px;
+}
+h4 {
+  font-size: 30px;
+}
+h5 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.rounded {
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+a {
+  text-decoration: underline;
+}
+a img {
+  border: 0;
+  outline: none;
+}
+.module__mail-top a {
+  color: #ffffe9;
+}
+
+.standard-bg {
+  background-color: #fff;
+}
+.red-bg {
+  background-color: #de0712;
+}
+.grey-bg {
+  background-color: #3b3b3b;
+}
+.dark-bg {
+  background: #2f2f2f;
+}
+.black-bg {
+  background: #000;
+}
+.grey-bg h1,
+.grey-bg h2,
+.grey-bg h3,
+.grey-bg h4,
+.grey-bg h5,
+.grey-bg p,
+.grey-bg span {
+  color: #858585;
+}
+.red-bg h1,
+.red-bg h2,
+.red-bg h3,
+.red-bg h4,
+.red-bg h5,
+.red-bg p,
+.red-bg span,
+.dark-bg h1,
+.dark-bg h2,
+.dark-bg h3,
+.dark-bg h4,
+.dark-bg h5,
+.dark-bg p,
+.dark-bg span,
+.black-bg h1,
+.black-bg h2,
+.black-bg h3,
+.black-bg h4,
+.black-bg h5,
+.black-bg p,
+.black-bg span,
+.grey-bg h1,
+.grey-bg h2,
+.grey-bg h3,
+.grey-bg h4,
+.grey-bg h5,
+.grey-bg p,
+.grey-bg span {
+  color: #fff;
+}
+
+.dark-bg a,
+.grey-bg a {
+  color: #fff;
+}
+
+.white {
+  color: #fff !important;
+}
+
+.footer-links {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-category-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.product-item {
+  line-height: 21px;
+  border: 1px solid #fff;
+  border-bottom: 1px solid #ccc;
+}
+.product-item a {
+  text-decoration: none;
+  color: #060606;
+}
+.product-item .dropship {
+  font-size: 18px;
+  font-weight: bold;
+}
+.product-item p {
+  max-width: 270px;
+}
+.product-item .brand {
+  font-size: 14px;
+  font-weight: bold;
+}
+.product-item .price {
+  max-width: none;
+  text-align: right;
+}
+.product-dropship {
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+// /******** Overrides *********/ //
+
+@mixin font-size($size: $font-size, $line-height: $font-line-height) {
+  font-size: $size + px;
+  line-height: $line-height + px;
+} // No use of REM values on mail clients

@@ -1,0 +1,167 @@
+@charset 'utf-8';
+@import "utilities"; // Utilities
+
+// /******** Website reset/base *********/ //
+
+* {
+  border: 0 !important;
+  text-decoration: none;
+  color: #000;
+}
+*::after {
+  display: none !important;
+}
+
+body {
+  color: #000 !important;
+  background: none !important;
+  background-color: #fff !important;
+  border: 0 !important;
+}
+img {
+  float: none;
+} // this makes images couse a pagebreak if it doesnt fit on the page
+
+form,
+input,
+textarea,
+label {
+  display: none !important;
+}
+
+#wrapper,
+#container {
+  float: none !important;
+  clear: both !important;
+  display: block !important;
+  position: relative !important;
+}
+#main,
+#content {
+  display: block !important;
+  border: 0 !important;
+  //width: 95% !important;
+  //padding: 1em !important;
+  @include box-shadow("none");
+}
+
+// /******** Website colors *********/ //
+
+a {
+  color: #000;
+}
+a::after {
+  color: #666;
+}
+
+// /******** Website typography *********/ //
+
+//* { font-family: Helvetica, Arial, Verdana; }
+//body { font-family: Helvetica, Arial, Verdana; font-size: 12pt; }
+
+h1 {
+  font-size: 46pt;
+}
+h2 {
+  font-size: 32pt;
+}
+h3 {
+  font-size: 18pt;
+}
+h4 {
+  font-size: 16pt;
+}
+h5 {
+  font-size: 14pt;
+}
+h6 {
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+#content h2 {
+  font-size: 32pt;
+  font-style: italic;
+}
+#content h3 {
+  font-size: 18pt;
+  margin: 0;
+}
+
+// /******** Website visible elements *********/ //
+
+a::after {
+  content: " (" attr(href) ") ";
+  font-size: 10pt;
+}
+
+header {
+  border-bottom: 2pt solid #000;
+  padding-bottom: 18pt;
+}
+
+// /******** Website hidden elements *********/ //
+
+.sidebars,
+#toolbars,
+#wrapper #container > header,
+#wrapper #container > footer,
+#header,
+#sidebar,
+#footer,
+nav,
+.noprint,
+.print-hidden,
+.no-print {
+  display: none !important;
+}
+
+/*
+.accessibility, 
+.noprint, 
+.navigation, 
+.postmetadata, 
+#respond, 
+.reply, 
+.post-edit-link, 
+.widget,
+.post-image, 
+img#wpstats, 
+#access, 
+#branding img, 
+#respond, 
+.comment-edit-link, 
+.edit-link, 
+.navigation, 
+.page-link, 
+.widget-area, 
+.follow { display: none !important; }
+*/
+
+// /******** WP CSS Print *********/ //
+
+#comments {
+  page-break-before: always;
+}
+
+ol.commentlist li {
+  list-style: none;
+  border-bottom: 2px solid #eee;
+  margin: 0 0 10pt 0;
+}
+ol.commentlist li div.comment-meta {
+  font-size: 6pt;
+}
+
+.wp-caption p {
+  font-size: 11pt;
+}
+.wp_syntax,
+pre,
+code {
+  font-size: 10pt !important;
+}

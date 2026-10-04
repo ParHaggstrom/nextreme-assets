@@ -1,0 +1,45 @@
+@charset 'utf-8';
+// /******** Utilities *********/ //
+
+@import "utilities"; // Utilities
+
+$color-slider-default: rgba(color("black", "dark", true), 0.5) !default;
+$color-slider-active: color("black", "very-light") !default;
+
+// /******** Core Admin *********/ //
+
+@import "../../../../core/assets/stylesheets/theme"; // Theme
+@import "../../../../core/assets/stylesheets/admin"; // Admin
+
+//@import 'theme/theme-tools'; // Tools
+@import "theme/theme-typography"; // Typography
+
+//@import 'theme/theme-layout'; // Layout
+
+body.admin-bar header#header {
+  top: 32px;
+  @include media("mobile") {
+    top: 0px;
+  }
+}
+/*
+body.admin-bar .sidebar-fixed {
+  top: 107px;
+  .drawer {
+    top: 107px;
+  }
+  .drawer-content {
+    height: calc(100% - 107px);
+  }
+  @include media("tablet") {
+    top: 86px;
+    height: calc(100% - 86px);
+    .drawer {
+      top: 86px;
+    }
+    .drawer-content {
+      height: calc(100% - 86px);
+    }
+  }
+}
+*/

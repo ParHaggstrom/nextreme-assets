@@ -1,0 +1,11 @@
+<svg id="nextreme-favicon-svg" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024">
+  <defs>
+    <style>
+      .nextreme-favicon-svg-1 {
+        fill: var(--theme-color-text, #231f20);
+      }
+    </style>
+  </defs>
+  <polygon class="nextreme-favicon-svg-1" points="38.63 736.26 561.44 287.42 985.57 647.09 600.65 449.2 38.63 736.26"/>
+  <polygon class="nextreme-favicon-svg-1" points="598.48 507.91 468.51 590.45 965.68 692.76 598.48 507.91"/>
+</svg>

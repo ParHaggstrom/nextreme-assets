@@ -1,0 +1,12 @@
+@charset 'utf-8';
+$theme: "nextreme";
+
+// /******** Utilities *********/ //
+
+@import "utilities"; // Utilities
+
+// /******** Fonts *********/ //
+
+$font-url: "../../fonts/" !default; // From 'stylesheets/dest/{{version}}/' to 'fonts/'
+$fonts: ();
+@include fonts();

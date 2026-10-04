@@ -1,0 +1,30 @@
+@charset 'utf-8';
+$theme: "nextreme";
+$debug: false;
+
+// /******** Utilities *********/ //
+
+@import "utilities"; // Utilities
+
+// /******** Preload styling *********/ //
+
+[ng\:cloak],
+[ng-cloak],
+[ng-cloak=""],
+[data-ng-cloak],
+[data-ng-cloak=""],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak,
+module-modal,
+base-header,
+base-footer {
+  display: none !important;
+}
+html {
+  margin-top: 0px !important;
+  display: block !important;
+  min-height: 100vh;
+  background: url($images-url + "/loaders/ajax-loader.gif") no-repeat 50% 50%
+    color("black");
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "name": "nextreme",
+    "version": "1.0.0",
+    "src": "src/nextreme",
+    "dist": "www",
+    "path": "wp-content/themes/nextreme",
+    "tasks": [
+      "core",
+      "wp-theme",
+      "wp-plugins",
+      "stylesheets",
+      "images",
+      "templates",
+      "javascripts"
+    ],
+    "modules": []
+  }
+]

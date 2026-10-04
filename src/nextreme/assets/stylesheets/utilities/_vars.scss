@@ -1,0 +1,157 @@
+// URLs
+//$base-url: 'assets/'; // Local URL to static content
+//$base-url: '//oktan.dev/assets/'; // CDN URL to static content
+$base-url: "../../"; // Local URL to static content
+
+$images-url: $base-url + "images/";
+$images-url-theme: $images-url;
+
+$font-size: 14; // Default font size in px
+$font-line-height: $font-size * 1.618; // Default line-height size in px
+$font-weight: normal; // Default font weight
+
+$font-size-small: 11;
+$font-line-height-small: $font-size-small * 1.618;
+
+//$font-heading: 'League Gothic', sans-serif;
+//$font-heading: 'Oswald', sans-serif;
+$font-heading: Arial, sans-serif;
+$font-heading-line-height: $font-size * 1.2;
+$font-sub-heading: Arial, sans-serif;
+$font-sub-heading-line-height: $font-size * 1.2;
+$font-body: Georgia, "Cambria", serif;
+
+//$font-family-custom-body: 'Source Sans Pro', sans-serif; // Custom body font family
+$font-family-custom-body: $font-body;
+$font-weight-custom-body: 400; // Custom body font weight
+$font-style-custom-body: normal; // Custom body font style
+$font-spacing-custom-body: 1px; // Custom body font letter spacing
+
+$font-family-custom-heading: $font-heading; // Custom heading font family
+$font-weight-custom-heading: 300; // Custom heading font weight
+$font-style-custom-heading: normal; // Custom heading font style
+$font-spacing-custom-heading: 1px; // Custom heading font spacing
+
+$font-family-custom-1: $font-heading; // Deperecated
+$font-family-custom-2: $font-sub-heading; // Deperecated
+
+$font-custom-title-family: $font-heading;
+$font-custom-title-weight: 700;
+$font-custom-title-style: normal;
+$font-custom-title-transform: uppercase;
+$font-custom-title-spacing: 0;
+
+$font-custom-subtitle-family: $font-sub-heading;
+$font-custom-subtitle-weight: 400;
+$font-custom-subtitle-style: normal;
+$font-custom-subtitle-transform: none;
+$font-custom-subtitle-spacing: 0;
+
+$font-custom-body-family: $font-body;
+$font-custom-body-weight: normal;
+$font-custom-body-style: normal;
+$font-custom-body-transform: none;
+$font-custom-body-spacing: 0;
+
+$padding: 40px;
+
+// Colors
+// scss-lint:disable all
+$colors: (
+  "white": (
+    "very-light": #ffffff,
+    "light": #ffffff,
+    "base": #f1f1f1,
+    "dark": #f2f2f2,
+    "very-dark": #f4f4f4,
+  ),
+  "black": (
+    "very-light": #333333,
+    "light": #3e3e3e,
+    "base": #202020,
+    "dark": #0f0f0f,
+    "very-dark": #000000,
+  ),
+  "grey": (
+    "very-light": lighten(#bfcace, 10%),
+    "light": #bfcace,
+    "base": #595e60,
+    "dark": darken(#595e60, 10%),
+    "very-dark": darken(#595e60, 20%),
+  ),
+  "red": (
+    "very-light": #fee,
+    "light": #ffcdcd,
+    "base": #e00f0f,
+    "dark": #b70005,
+    "very-dark": darken(#840004, 10%),
+  ),
+  "blue": (
+    "very-light": lighten(#006e9d, 50%),
+    "light": lighten(#006e9d, 25%),
+    "base": #006e9d,
+    "dark": #004563,
+    "very-dark": darken(#004563, 10%),
+  ),
+  "yellow": (
+    "very-light": #fffbcf,
+    "light": #fff799,
+    "base": #ffe000,
+    "dark": #b49e00,
+    "very-dark": darken(#716300, 10%),
+  ),
+  "green": (
+    "very-light": #e3ffe5,
+    "light": #75de77,
+    "base": #2ecd48,
+    "dark": #1e872f,
+    "very-dark": #13440f,
+  ),
+  "orange": (
+    "very-light": lighten(#e37c2d, 20%),
+    "light": lighten(#e37c2d, 10%),
+    "base": #e37c2d,
+    "dark": darken(#e37c2d, 10%),
+    "very-dark": darken(#e37c2d, 20%),
+  ),
+);
+// scss-lint:enable all
+
+// Generic settings
+$border-radius: 3px;
+
+$color-white-transparent: rgba(255, 255, 255, 0);
+$color-black-transparent: rgba(0, 0, 0, 0);
+
+// Bootstrap support for PS
+$screen-xxs: 320px;
+$screen-xxs-max: 460px;
+
+$screen-xs: 460px;
+$screen-xs-max: 640px;
+
+$screen-sm: 640px;
+$screen-sm-max: 768px;
+
+$screen-md: 768px;
+$screen-md-max: 960px;
+
+$screen-lg: 960px;
+$screen-lg-max: 1280px;
+
+$screen-xl: 1280px;
+$screen-xl-max: 1440px;
+
+$screen-xxl: 1440px;
+$screen-xxl-max: 1920px;
+
+$layout-padding-xxxlarge: 20%;
+$layout-padding-xxlarge: 15%;
+$layout-padding-xlarge: 10%;
+
+$layout-padding-x: 5%;
+
+$layout-padding-x-xxxlarge: $layout-padding-x * 5 !default;
+$layout-padding-x-xxlarge: $layout-padding-x * 3 !default;
+$layout-padding-x-xlarge: $layout-padding-x * 2 !default;
+$layout-padding-x-large: $layout-padding-x * 1 !default;
