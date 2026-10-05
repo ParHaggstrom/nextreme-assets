@@ -15,22 +15,22 @@ $font-line-height-small: $font-size-small * 1.618;
 
 //$font-heading: 'League Gothic', sans-serif;
 //$font-heading: 'Oswald', sans-serif;
-$font-heading: Arial, sans-serif;
+$font-heading: "Staatliches", sans-serif;
 $font-heading-line-height: $font-size * 1.2;
-$font-sub-heading: Arial, sans-serif;
+$font-sub-heading: "Squada One", sans-serif;
 $font-sub-heading-line-height: $font-size * 1.2;
-$font-body: Georgia, "Cambria", serif;
+$font-body: sans-serif;
 
 //$font-family-custom-body: 'Source Sans Pro', sans-serif; // Custom body font family
 $font-family-custom-body: $font-body;
 $font-weight-custom-body: 400; // Custom body font weight
 $font-style-custom-body: normal; // Custom body font style
-$font-spacing-custom-body: 1px; // Custom body font letter spacing
+$font-spacing-custom-body: 0px; // Custom body font letter spacing
 
 $font-family-custom-heading: $font-heading; // Custom heading font family
-$font-weight-custom-heading: 300; // Custom heading font weight
+$font-weight-custom-heading: 400; // Custom heading font weight
 $font-style-custom-heading: normal; // Custom heading font style
-$font-spacing-custom-heading: 1px; // Custom heading font spacing
+$font-spacing-custom-heading: 0px; // Custom heading font spacing
 
 $font-family-custom-1: $font-heading; // Deperecated
 $font-family-custom-2: $font-sub-heading; // Deperecated

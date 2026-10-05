@@ -42,12 +42,6 @@ $color-slider-active: color("black", "very-light") !default;
   --theme-font-heading: #{$font-heading};
   --theme-font-sub-heading: #{$font-sub-heading};
 
-  --theme-color-bg: #{color("grey", "very-light", true)};
-  --theme-color-bg-value: #{to-rgb-value(color("grey", "very-light", true))};
-
-  --theme-color-text: #{color("grey", "very-dark", true)};
-  --theme-color-highlight: #{color("red", "base", true)};
-
   --theme-color-btn-default-bg: #{color("white", "light", true)};
   --theme-color-btn-default-text: #{color("black", "base", true)};
   --theme-color-btn-default-hover: #{color("white", "very-light", true)};

@@ -29,6 +29,9 @@ class PHP_Theme_Nextreme {
     add_filter( 'php_config_public', array($this, 'php_config_post_types_filter'), 10, 1);
     add_filter( 'php_config_public', array($this, 'php_config_endpoints_filter'), 10, 1);
     add_filter( 'php_config_public', array($this, 'php_config_taxonomies_filter'), 10, 1);
+
+    add_action('wp_head', array($this, 'php_theme_frontend_header_font'));
+
   }
 
   public function php_theme_supports() {
@@ -125,8 +128,6 @@ class PHP_Theme_Nextreme {
     $php_obj['public']['analytics']['url'] = '//analytics.nordicextreme.se/';
     $php_obj['public']['analytics']['domain'] = $_SERVER['SERVER_NAME'];
 
-    $php_obj['public']['domains'] = array($php_site_url_0);
-
     $php_obj['public']['imgix'] = false;
     $php_obj['public']['imgix_hosts'] = [];
 
@@ -217,6 +218,7 @@ class PHP_Theme_Nextreme {
     $php_obj['public']['menues']['relatives'] = array('name' => 'Relatives');
 
     // Shapes
+    $php_obj['public']['shapes']['main-logo'] = __('Main Logo', 'php');
 
     // Search
     unset($php_obj['public']['search']['groups']['faq']);
@@ -269,6 +271,16 @@ class PHP_Theme_Nextreme {
     return $obj;
   }
 
+  public function php_theme_frontend_header_font() {
+    //$font_family = 'Pathway+Extreme:ital,opsz,wght@0,8..144,100;0,8..144,400;0,8..144,700;1,8..144,100;1,8..144,400;1,8..144,700';
+    //$font_family = 'Noto+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700';
+    $font_family = 'Squada+One&family=Staatliches';
+    echo '<link rel="preconnect" href="https://fonts.googleapis.com">';
+    echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>';
+    echo '<link href="https://fonts.googleapis.com/css2?family=' . $font_family . '&display=swap" rel="stylesheet">';
+  }
+
+
 	public function run() {
 
     add_action( 'php_functions_init', array($this, 'php_theme_supports'), 0, 0);
@@ -279,26 +291,9 @@ class PHP_Theme_Nextreme {
 
     add_filter('php_taxonomies_array', array($this, 'php_taxonomies_array_filter'), 30, 1);
 
-    add_filter( '_php_object_post_output', '_php_post_output_nextreme_filter', 100, 3);
-
-    add_filter( '_php_object_post_output', 'filter_php_product_object_badges_models', 100, 3); // _php_product_object // TODO Move to format instead of output
-    add_filter( '_php_object_product_output', 'filter_php_product_object_badges_models', 100, 3); // _php_product_object // TODO Move to format instead of output
-
-    add_filter('_php_object_post_output', '_php_object_post_output_models_filter', 10, 3);
-//add_filter('php_list_models_item_object', 'php_models_object_filter', 10, 3);
-
     add_filter('php_product_thumbnail_data', 'php_product_thumbnail_data_filter', 10, 1);
-
-    add_action('php_theme_toolbar_nav_menu', 'php_theme_toolbar_nav_sidebar_item', 10);
-
     add_action('php_theme_header', 'php_core_theme_menues_top', 12);
-
     add_filter( 'php_search_group', array($this, 'php_search_group'), 10, 3 );
-
-    add_filter('php_ref_filter_taxonomies', 'filter_php_ref_filter_taxonomies_platform', 100, 1);
-    add_filter('php_badges_taxonomies_array', 'filter_php_ref_filter_taxonomies_platform', 100, 1);
-
-    add_filter('php_filters_object', 'php_filter_object_models', 10, 2);
 
 	}
 }
